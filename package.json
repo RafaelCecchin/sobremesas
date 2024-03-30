@@ -1,0 +1,23 @@
+{
+  "name": "sobremesas",
+  "version": "1.0.0",
+  "description": "Aplicativo para pedir em namoro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w assets/style/scss -o assets/style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelCecchin/sobremesas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelCecchin/sobremesas/issues"
+  },
+  "homepage": "https://github.com/RafaelCecchin/sobremesas#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
