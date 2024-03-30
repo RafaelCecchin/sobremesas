@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
 :root {
   --white: #fff;
-  --color-black: #000;
   --grey: #373737;
   --red: #FF5959; }
 
@@ -12,17 +11,10 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Exo', sans-serif;
-  font-size: 1.2rem; }
-  @media screen and (max-width: 1050px) {
-    body {
-      font-size: 1.1rem; } }
-  @media screen and (max-width: 700px) {
-    body {
-      font-size: 1.0rem; } }
-  @media screen and (max-width: 550px) {
-    body {
-      font-size: .9rem; } }
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 400; }
 
 .only-semantics {
   padding: 0;
@@ -37,18 +29,40 @@ body {
   left: 0;
   top: 0; }
 
+body {
+  background-color: var(--grey); }
+
 .container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   padding: 2rem;
   max-width: 1200px;
-  margin: auto; }
-  @media screen and (max-width: 1050px) {
-    .container {
-      padding: 1.8rem; } }
-  @media screen and (max-width: 700px) {
-    .container {
-      padding: 1.4rem; } }
-  @media screen and (max-width: 550px) {
-    .container {
-      padding: 1rem; } }
+  margin: auto;
+  gap: 2rem; }
+
+button {
+  width: 100%;
+  padding: .5rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1.2rem;
+  max-width: 14rem;
+  border-radius: 0.25rem;
+  border: none; }
+
+.page-1 .container {
+  align-items: center;
+  justify-content: center; }
+
+.page-1 h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  line-height: 0.5; }
+  .page-1 h2 span {
+    font-family: 'Oleo Script', sans-serif;
+    color: var(--red);
+    text-transform: none;
+    font-size: 2rem; }
