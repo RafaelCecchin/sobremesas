@@ -1,4 +1,6 @@
 .page-2 {
+    overflow: hidden;
+
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -25,6 +27,10 @@
         .roleta-container {
             grid-column: 1/-1;
             position: relative;
+
+            .roulette {
+                scale: 0.8;
+            }
         }
     }
 }

@@ -84,22 +84,26 @@ button {
       text-transform: none;
       font-size: 2rem; }
 
-.page-2 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto 1fr;
-  align-items: center; }
-  .page-2 .container .title-container h3 {
-    margin-bottom: .5rem; }
-  .page-2 .container .roleta-static {
-    width: 100%;
-    height: auto;
-    max-height: 10rem; }
-  .page-2 .container .description {
-    grid-column: 1/-1; }
-  .page-2 .container .roleta-container {
-    grid-column: 1/-1;
-    position: relative; }
+.page-2 {
+  overflow: hidden; }
+  .page-2 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: center; }
+    .page-2 .container .title-container h3 {
+      margin-bottom: .5rem; }
+    .page-2 .container .roleta-static {
+      width: 100%;
+      height: auto;
+      max-height: 10rem; }
+    .page-2 .container .description {
+      grid-column: 1/-1; }
+    .page-2 .container .roleta-container {
+      grid-column: 1/-1;
+      position: relative; }
+      .page-2 .container .roleta-container .roulette {
+        scale: 0.8; }
 
 .roulette {
   font-family: 'Work Sans', sans-serif;
