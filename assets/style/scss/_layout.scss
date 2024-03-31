@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 450px;
     margin: auto;
     gap: 2rem;
 }
@@ -51,13 +51,18 @@ button {
 }
 
 .small-text {
-    
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .middle-text {
-
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .big-text {
-
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1;
 }

@@ -5,6 +5,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
         <link rel="stylesheet" href="./assets/style/style.css"/>
     </head>
     <body>
@@ -25,6 +29,22 @@
                 <div class="title-container">
                     <h3 class="middle-text">Promoção!</h3>
                     <h2 class="big-text">Gire a <br/>roleta!</h2>
+                </div>
+                <img class="roleta-static" src="./assets/img/roleta.svg" width="120" height="120" alt="Roleta">
+                <p class="small-text description">Hoje é seu dia de sorte? Gire a roleta e concorra a descontos ou a uma sobremesa misteriosa!</p>
+                <div class="roleta-container">
+                    <div class="roulette">
+                        <div class="spinner"></div>
+                        <div class="shadow"></div>
+                        <div class="markers">
+                          <div class="triangle">
+                            
+                          </div>
+                        </div>
+                        <div class="button">
+                          <span>GIRAR</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
