@@ -11,7 +11,7 @@ var data = [
     { id: '', color: '#dc0936', text: '6%' },
     { id: '', color: '#e5177b', text: '13%' },
     { id: '', color: '#be107f', text: '15%' },
-    { id: '', color: '#881f7e', text: 'Sobremesa <br/>Misteriosa', type: 'sobremesa' }
+    { id: '', color: '#881f7e', text: 'Pedido <br/>Misterioso', type: 'sobremesa' }
   ];
   
   var RouletteWheel = function(el, items){
