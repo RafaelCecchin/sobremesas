@@ -154,6 +154,11 @@ button[disabled] {
     width: max-content;
     min-width: 7rem; }
 
+.page-5 .container video {
+  width: 100%;
+  height: auto;
+  margin: auto; }
+
 .roulette {
   font-family: 'Work Sans', sans-serif;
   display: block;
