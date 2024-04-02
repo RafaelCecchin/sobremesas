@@ -1,0 +1,27 @@
+.page-4 {
+    .container {
+        h1 {
+            text-align: center;
+        }
+
+        .coracao {
+            text-decoration: none;
+            font-size: 11rem;
+            font-style: normal;
+            margin: auto;
+        }
+
+        .buttons-container {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            justify-content: center;
+            
+            .btn {
+                width: max-content;
+                min-width: 7rem;
+            }
+
+        }
+    }
+}

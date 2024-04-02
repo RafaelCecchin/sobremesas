@@ -53,6 +53,9 @@ button {
   border-radius: 0.25rem;
   border: none; }
 
+button[disabled] {
+  background-color: #adadad; }
+
 .small-text {
   font-size: 1.5rem;
   font-weight: 400; }
@@ -132,6 +135,24 @@ button {
       gap: 1rem; }
     .page-3 .container .questions .btn {
       margin: 1rem auto auto auto; }
+
+.page-4 .container h1 {
+  text-align: center; }
+
+.page-4 .container .coracao {
+  text-decoration: none;
+  font-size: 11rem;
+  font-style: normal;
+  margin: auto; }
+
+.page-4 .container .buttons-container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center; }
+  .page-4 .container .buttons-container .btn {
+    width: max-content;
+    min-width: 7rem; }
 
 .roulette {
   font-family: 'Work Sans', sans-serif;
