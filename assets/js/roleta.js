@@ -1,17 +1,17 @@
 var data = [
     //{ id: '', color: '#3f297e', text: 'ALL IN', ikon: 'invert_colors' },
-    { id: '', type: 'allin', color: '#3f297e', text: 'ALL IN', ikon: 'grade' },
-    { id: '', type: 'quiz', color: '#1d61ac', text: '25' },
-    { id: '', type: 'quiz', color: '#169ed8', text: '50' },
-    { id: '', type: 'quiz', color: '#209b6c', text: '100' },
-    { id: '', color: '#60b236', text: '200', ikon: 'stars' },
-    { id: '', color: '#efe61f', text: '300' },
-    { id: '', color: '#f7a416', text: '500' },
-    { id: '', type: 'time', color: '#e6471d', text: '+15', ikon: 'timer' },
-    { id: '', type: 'question', color: '#dc0936', text: '#@!?' },
-    { id: '', color: '#e5177b', text: 'BONUS!' },
-    { id: '', color: '#be107f', text: '+100' },
-    { id: '', type: 'replay', color: '#881f7e', text: 'PLAY AGAIN', ikon: 'replay' }
+    { id: '', color: '#3f297e', text: '5%' },
+    { id: '', color: '#1d61ac', text: '7%' },
+    { id: '', color: '#169ed8', text: '12%' },
+    { id: '', color: '#209b6c', text: '8%' },
+    { id: '', color: '#60b236', text: '2%' },
+    { id: '', color: '#efe61f', text: '1%' },
+    { id: '', color: '#f7a416', text: '3%' },
+    { id: '', color: '#e6471d', text: '4%' },
+    { id: '', color: '#dc0936', text: '6%' },
+    { id: '', color: '#e5177b', text: '13%' },
+    { id: '', color: '#be107f', text: '15%' },
+    { id: '', color: '#881f7e', text: 'Sobremesa <br/>Misteriosa', type: 'sobremesa' }
   ];
   
   var RouletteWheel = function(el, items){
@@ -31,10 +31,10 @@ var data = [
     
     var count = this.items.length;
     var delta = 360/count;
-    var index = !isNaN(parseInt(_index))? parseInt(_index) : parseInt(Math.random()*count);
-        
-    var a = index * delta + ((this._bis)? 1440 : -1440);
+    //var index = !isNaN(parseInt(_index))? parseInt(_index) : parseInt(Math.random()*count);
+    var index = 11;
     
+    var a = index * delta + ((this._bis)? 8640 : -8640);
     //a+=this.options.angleOffset;
     
     this._bis = !this._bis;
@@ -45,12 +45,14 @@ var data = [
     
     var _onAnimationBegin = function(){
       this.$el.addClass('busy');
+      this.$el.find('.button').attr('disabled', true);
       this.trigger('spin:start',this);
     }
     
     var _onAnimationComplete = function(){
       this.$el.removeClass('busy');
       this.trigger('spin:end',this);
+      this.$el.find('.button span').html('RECEBER');
     }
     
     $spinner
@@ -61,7 +63,7 @@ var data = [
       //easing: [20, 7],
       //easing: [200, 20],
       easing: 'easeOutQuint',
-      duration: 5000,
+      duration: 20000,
       begin: $.proxy(_onAnimationBegin,this),
       complete: $.proxy(_onAnimationComplete,this)
     });
@@ -173,7 +175,7 @@ var data = [
   }
   
   RouletteWheel.prototype.bindEvents = function(){
-    this.$el.find('.button').on('click', $.proxy(this.spin,this));
+    this.$el.find('.button').one('click', $.proxy(this.spin,this));
   }
   
   

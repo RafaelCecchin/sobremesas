@@ -37,7 +37,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 640px;
+  height: 100vh;
   padding: 2rem;
   max-width: 450px;
   margin: auto;
@@ -182,7 +183,7 @@ button {
         left: 0;
         white-space: nowrap;
         transform-origin: 0 0;
-        font-size: .8em; }
+        font-size: 1.5em; }
         .roulette .spinner .item .label i, .roulette .spinner .item .label .text {
           display: inline-block;
           vertical-align: middle;
@@ -214,7 +215,7 @@ button {
     transition: transform 0.15s;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .roulette .button:hover {
-    color: inherit; }
+    color: #000000; }
   .roulette .button span {
     font-size: 1.6em;
     letter-spacing: -0.05em; }
@@ -225,22 +226,5 @@ button {
     cursor: default; }
 
 /* CUSTOM LABELS */
-.roulette .spinner .item[data-type="quiz"] .label {
-  font-size: 1.5em; }
-
-.roulette .spinner .item[data-type="question"] .label {
-  font-size: 1.3em;
-  font-weight: 600; }
-
-.roulette .spinner .item[data-type="replay"] .label .text {
-  font-size: .6em;
-  white-space: initial;
-  width: 1em;
-  text-align: center;
-  line-height: 1.2; }
-
-.roulette .spinner .item[data-type="replay"] .label i {
-  font-size: 1.5em; }
-
-.roulette .spinner .item[data-type="time"] .label i {
-  font-size: 1.5em; }
+.roulette .spinner .item[data-type="sobremesa"] .label {
+  font-size: .65em; }
