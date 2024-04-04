@@ -60,7 +60,7 @@
                 <p class="small-text">Nos vamos fazer algumas perguntas rápidas para identificação do seu prêmio, Ok?</p>
                 <p class="small-text">Vamos la... ⬇️</p>
 
-                <form class="questions" onsubmit="event.preventDefault(); submitForm()">
+                <form class="questions" method="POST" onsubmit="event.preventDefault(); submitForm()">
                     <div class="question-container">
                         <label class="small-text">Qual o seu primeiro nome?</label>
                         <input type="text" id="nome" name="nome" required>
