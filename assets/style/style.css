@@ -72,7 +72,7 @@ button[disabled] {
   line-height: 1; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 .page-1 .container {
   align-items: center;
@@ -91,6 +91,8 @@ button[disabled] {
       color: var(--red);
       text-transform: none;
       font-size: 2rem; }
+  .page-1 .container #acessar-cardapio {
+    margin-top: 2rem; }
 
 .page-2 {
   overflow: hidden; }
@@ -139,23 +141,26 @@ button[disabled] {
     .page-3 .container .questions .btn {
       margin: 1rem auto auto auto; }
 
-.page-4 .container h1 {
-  text-align: center; }
-
-.page-4 .container .coracao {
-  text-decoration: none;
-  font-size: 11rem;
-  font-style: normal;
-  margin: auto; }
-
-.page-4 .container .buttons-container {
+.page-4 {
   display: flex;
-  align-items: center;
-  gap: .5rem;
-  justify-content: center; }
-  .page-4 .container .buttons-container .btn {
-    width: max-content;
-    min-width: 7rem; }
+  height: 100vh; }
+  .page-4 .container {
+    height: max-content; }
+    .page-4 .container h1 {
+      text-align: center; }
+    .page-4 .container .coracao {
+      text-decoration: none;
+      font-size: 11rem;
+      font-style: normal;
+      margin: auto; }
+    .page-4 .container .buttons-container {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      justify-content: center; }
+      .page-4 .container .buttons-container .btn {
+        width: max-content;
+        min-width: 7rem; }
 
 .page-5 .container video {
   width: 100%;
