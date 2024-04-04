@@ -53,6 +53,10 @@ var data = [
       this.$el.removeClass('busy');
       this.trigger('spin:end',this);
       this.$el.find('.button span').html('RECEBER');
+
+      this.$el.find('.button').on('click', () => {
+        Steps.goToNextStep();
+      })
     }
     
     $spinner
