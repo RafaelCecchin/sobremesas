@@ -3,23 +3,10 @@
         align-items: center;
         justify-content: center;
 
-        .logo {
-            width: 7rem;
-            height: auto;
-        }
-    
-        .nome-empresa h2 {
-            font-size: 4rem;
-            text-transform: uppercase;
-            text-align: center;
-            font-weight: 400;
-            line-height: 0.5;
-    
-            span {
-                font-family: 'Oleo Script', sans-serif;
-                color: var(--red);
-                text-transform: none;
-                font-size: 2rem;
+        .logo-container {
+            .logo {
+                width: 12rem;
+                height: auto;
             }
         }
 
